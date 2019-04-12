@@ -79,12 +79,33 @@ body {
     margin-bottom: 100px;
 }
 
-#best-of-the-month{
+#best-of-the-month {
     text-align: center;
 }
 
-#best-of-the-month-div{
+#best-of-the-month-div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#best-restaurant-title {
+    text-align: right;
+}
+
+#best-restaurant-div {
+    padding: 50px;
+    background-image: url("../mocks/best-restaurunt.png");
+}
+
+#best-rest-grid {
+    display: grid;
+    justify-items: end;
+    justify-content: end;
+    grid-template-columns: auto auto auto auto; /*make 4 columns*/
+    grid-gap: 60px;
+    text-align: center;
+    font-size: 0.85em;
+
 }
