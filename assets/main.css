@@ -1,0 +1,31 @@
+body {
+    /*padding: 0px;*/
+    margin: 0;
+}
+
+#nav-bar-div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Shabnam;
+    font-size: 15px;
+    background-color: white;
+}
+
+.nav-bar-option {
+    margin: 10px;
+    padding: 5px;
+}
+
+#separator {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#nav-border-div {
+    background: linear-gradient(to right, red, purple);
+    height: 3px;
+}
