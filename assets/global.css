@@ -11,3 +11,7 @@
     src: url("https://dist.reyhoon-static.com/web-assets/fonts/v3.0.1/Shabnam-Bold.eot?#iefix") format("embedded-opentype"), url("https://dist.reyhoon-static.com/web-assets/fonts/v3.0.1/Shabnam-Bold.woff") format("woff"), url("https://dist.reyhoon-static.com/web-assets/fonts/v3.0.1/Shabnam-Bold.woff2") format("woff2"), url("https://dist.reyhoon-static.com/web-assets/fonts/v3.0.1/Shabnam-Bold.ttf") format("truetype");
     font-weight: 700
 }
+
+a {
+    text-decoration: none /*remove underline from links*/
+}
