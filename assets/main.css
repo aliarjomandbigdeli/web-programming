@@ -69,3 +69,22 @@ body {
     border-top-left-radius: 10px;
     background: linear-gradient(to right, red, purple);
 }
+
+#guidance-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    color: #4a5575;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+#best-of-the-month{
+    text-align: center;
+}
+
+#best-of-the-month-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
