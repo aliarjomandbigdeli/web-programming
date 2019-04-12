@@ -1,5 +1,4 @@
 body {
-    /*padding: 0px;*/
     margin: 0;
 }
 
@@ -8,22 +7,21 @@ body {
     flex-direction: row-reverse;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: Shabnam;
-    font-size: 15px;
+    font-size: 0.9em;
     color: #4a5575;
     background-color: white;
 }
 
-.nav-bar-option {
+.nav-bar-items {
     margin: 10px;
     padding: 5px;
 }
 
-.nav-bar-option > a {
+.nav-bar-items > a {
     color: #4a5575;
 }
 
-.nav-bar-option > a:hover {
+.nav-bar-items > a:hover {
     color: #d20064;
 }
 
@@ -37,4 +35,37 @@ body {
 #nav-border-div {
     background: linear-gradient(to right, red, purple);
     height: 3px;
+}
+
+#order-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("../mocks/pizza.PNG");
+}
+
+.order-div-items {
+    margin: 10px;
+}
+
+#search-bar-div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#city-sel {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.5em;
+}
+
+#search-icon-div {
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background: linear-gradient(to right, red, purple);
 }

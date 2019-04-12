@@ -13,5 +13,9 @@
 }
 
 a {
-    text-decoration: none /*remove underline from links*/
+    text-decoration: none
+}
+
+* {
+    font-family: Shabnam;
 }

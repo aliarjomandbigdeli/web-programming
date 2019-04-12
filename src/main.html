@@ -2,19 +2,46 @@
 <html lang="fa-IR">
 <head>
     <meta charset="UTF-8">
-    <link href="../assets/main.css" rel="stylesheet" type="text/css">
     <link href="../assets/global.css" rel="stylesheet" type="text/css">
+    <link href="../assets/main.css" rel="stylesheet" type="text/css">
     <title>سفارش آنلاین غذا از بهترین رستوران‌ها و فست فودها | ریحون</title>
 </head>
 <body>
 <div id="nav-bar-div">
-    <div class="nav-bar-option"><a href="login.html">ورود</a></div>
-    <div class="nav-bar-option" id="separator">|</div>
-    <div class="nav-bar-option"><a href="register.html">عضویت</a></div>
-    <div class="nav-bar-option">&nbsp;&nbsp;&nbsp;</div>
-    <div class="nav-bar-option">راهنما</div>
+    <div class="nav-bar-items"><a href="login.html">ورود</a></div>
+    <div class="nav-bar-items" id="separator">|</div>
+    <div class="nav-bar-items"><a href="register.html">عضویت</a></div>
+    <div class="nav-bar-items">&nbsp;&nbsp;&nbsp;</div>
+    <div class="nav-bar-items">راهنما</div>
 </div>
-<div id="nav-border-div">
+<div id="nav-border-div"></div>
+
+<div id="order-div">
+    <div class="order-div-items"><p></p></div>
+    <div class="order-div-items"><p></p></div>
+    <div class="order-div-items"><img src="../mocks/reyhoon-icon.png" alt="Reyhoon"></div>
+    <div class="order-div-items"><p></p></div>
+    <div class="order-div-items"><h1>سفارش آنلاین غذا از بهترین رستوران‌ها و فست‌فود‌‌ها</h1></div>
+    <div class="order-div-items"><p dir="rtl">برای دیدن لیست رستوران‌ها و فست‌فود‌هایی که به شما سرویس می‌دهند، منطقه
+        خود را وارد کنید.</p></div>
+    <div class="order-div-items" id="search-bar-div">
+        <select name="citySel" id="city-sel">
+            <option value="تهران">تهران</option>
+            <option value="اصفهان">اصفهان</option>
+            <option value="شیراز">شیراز</option>
+            <option value="مشهد">مشهد</option>
+        </select>
+        <input size="55" list="districts" name="district">
+        <datalist id="districts">
+            <option value="جستجو خودکار منطقه شما">
+        </datalist>
+        <div class="search-bar-items" id="search-icon-div">
+            <img src="../mocks/search-icon.png">
+        </div>
+    </div>
+    <div class="order-div-items"><p></p></div>
+    <div class="order-div-items"><p></p></div>
+    <div class="order-div-items"><p></p></div>
 
 </div>
 
