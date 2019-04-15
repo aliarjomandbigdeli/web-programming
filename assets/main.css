@@ -65,10 +65,11 @@ body {
 }
 
 #search-icon-div {
-    padding: 5px;
+    padding: 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     background: linear-gradient(to right, red, purple);
+    color: white;
 }
 
 #guidance-div {
@@ -120,7 +121,6 @@ body {
 
 #food-photo-div {
     display: flex;
-    justify-content: space-around;
 }
 
 .food-photo-items {
@@ -130,8 +130,8 @@ body {
     text-align: right;
     color: white;
     margin: 10px;
-    height: 280px;
-    width: 280px;
+    height: 260px;
+    width: 260px;
 }
 
 #food-photo-items-1 {
