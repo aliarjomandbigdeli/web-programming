@@ -1,0 +1,28 @@
+#icon-div {
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*display: inline-block;*/
+    /*display: flex;*/
+    /*justify-items: center;*/
+    /*alignment: center;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*padding-left: auto;*/
+    /*padding-right: auto;*/
+    /*background-color: green;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*color: aqua;*/
+    /*border-bottom: 5px;*/
+    /*border-bottom: gray;*/
+}
+
+#icon-div > img {
+    /*position: absolute;*/
+    /*position: fixed;*/
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
