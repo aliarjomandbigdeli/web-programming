@@ -9,12 +9,12 @@ body {
     padding-right: 30px;
     font-size: 0.9em;
     color: #4a5575;
-    background-color: white;
 }
 
 .nav-bar-items {
     margin: 10px;
     padding: 5px;
+    background-color: white;
 }
 
 .nav-bar-items > a {
@@ -61,6 +61,7 @@ body {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 1.5em;
+    background-color: white;
 }
 
 #search-icon-div {
@@ -107,5 +108,59 @@ body {
     grid-gap: 60px;
     text-align: center;
     font-size: 0.85em;
+}
 
+#food-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f6f9fc;
+}
+
+#food-photo-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.food-photo-items {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    color: white;
+    margin: 10px;
+    height: 280px;
+    width: 280px;
+}
+
+#food-photo-items-1 {
+    background-image: url("../mocks/foods/food(1).jpg");
+}
+
+#food-photo-items-2 {
+    background-image: url("../mocks/foods/food(2).jpg")
+}
+
+#food-photo-items-3 {
+    background-image: url("../mocks/foods/food(3).jpg")
+}
+
+#food-photo-items-4 {
+    background-image: url("../mocks/foods/food(4).jpg")
+}
+
+#more-food-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.more-food-items {
+    margin: 10px;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: white;
 }
