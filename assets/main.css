@@ -172,7 +172,7 @@ body {
     position: relative;
 }
 
-#sms-img{
+#sms-img {
     position: absolute;
     left: -150px;
     top: 100px;
@@ -185,7 +185,7 @@ body {
     align-items: flex-end;
     background-color: white;
     margin-right: 20px;
-    margin-left: 30px;
+    margin-left: 70px;
     padding: 50px 20px 40px 20px;
     z-index: 2;
 }
@@ -295,8 +295,7 @@ body {
 
 #footer-social {
     background-color: #191919;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding: 1vw 5vw 1vw 5vw;
     color: #939b89
 }
 

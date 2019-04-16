@@ -1,47 +1,35 @@
-body{
-    padding-top: 50px;
+body {
+    padding-top: 102px;
 }
 
-#icon-div {
+#header-div {
     position: fixed;
     left: 0;
     top: 0;
-    height: 40px;
-    width: inherit;
-    /*display: inline-block;*/
-    /*display: flex;*/
-    /*justify-items: center;*/
-    /*alignment: center;*/
-    /*align-content: center;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*padding-left: auto;*/
-    /*padding-right: auto;*/
-    /*background-color: green;*/
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-    /*color: aqua;*/
-    /*border-bottom: 5px;*/
-    /*border-bottom: gray;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
-#icon-div > img {
-    /*position: absolute;*/
-    position: fixed;
-    /*display: inline-block;*/
-    /*top: 0;*/
-    left: 45%;
-    display: block;
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
+#icon-div {
+    display: flex;
+    justify-content: center;
 }
 
-#border-div{
-    position: fixed;
-    top: 40px;
+#border-div {
     height: 2px;
-    width: inherit;
-    /*display: inline-block;*/
-    /*background-color: #eeeeee;*/
-    background-color: green;
+    width: 100%;
+    background-color: #f6f9fc;
+}
+
+#login-register-button-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#login-register-button-div > div {
+    margin: 10px;
+    color: gray;
 }
