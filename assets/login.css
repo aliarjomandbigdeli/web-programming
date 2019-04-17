@@ -1,6 +1,5 @@
 body {
-    padding-top: 97px;
-    margin: 0;
+    padding-top: 104px;
 }
 
 #header-div {
@@ -31,8 +30,12 @@ body {
     background-color: white;
 }
 
-#login-register-button-div > div {
+#login-register-button-div > a {
     padding: 15px 30px 15px 30px;
+}
+
+#login-register-button-div > a:hover {
+    color: var(--btn-bg-or-highlighted-color);
 }
 
 #login-header-button {
@@ -56,7 +59,7 @@ body {
     padding-bottom: 50px;
 }
 
-#inputs-div > div {
+#password-input-div, #email-num-input-div {
     display: flex;
     margin: 5px;
 }
@@ -77,11 +80,13 @@ body {
     left: 150px;
     font-size: 0.8em;
     color: #5890ff;
+    margin-top: 5px;
 }
 
 #login-button {
     background-color: var(--btn-bg-or-highlighted-color);
     color: white;
+    margin-top: 50px;
     padding: 5px 15px 5px 15px;
     border-radius: 15px;
 }
@@ -104,18 +109,18 @@ body {
     margin: 10px;
 }
 
-#footer-border-div{
+#footer-border-div {
     height: 2px;
     background-color: var(--loign-register-bg-color);
 }
 
-#footer-more-option-div{
+#footer-more-option-div {
     display: flex;
     justify-content: center;
     color: var(--loign-register-txt-color);
     padding: 10px;
 }
 
-#footer-more-option-div > div{
+#footer-more-option-div > div {
     margin: 10px;
 }

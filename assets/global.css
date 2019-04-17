@@ -21,6 +21,8 @@ a {
 }
 
 body {
+    margin: 0;
+    /*color name*/
     --main-bg-color: #f6f9fc;
     --btn-bg-or-highlighted-color: #d40062;
     --loign-register-txt-color: gray;
