@@ -18,7 +18,7 @@
 }
 
 .nav-bar-items > a:hover {
-    color: #d20064;
+    color: var(--btn-bg-or-highlighted-color);
 }
 
 #separator {
@@ -76,7 +76,7 @@
     color: var(--loign-register-txt-color);
 }
 
-#search-input > div{
+#search-input > div {
     padding: 15px;
 }
 
@@ -112,6 +112,44 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 50px;
+}
+
+.best-month-div-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-basis: 360px;
+    text-align: center;
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+
+.best-month-div-items > div > img {
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+
+.best-month-div-items > p {
+    color: gray;
+}
+
+.stars {
+    display: flex;
+    color: darkgray;
+}
+
+.stars > i {
+    color: orange;
+}
+
+.order-bst-rest-btn {
+    color: var(--btn-bg-or-highlighted-color);
+    border-color: var(--btn-bg-or-highlighted-color);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 25px 5px 25px;
+    margin-top: 10px;
 }
 
 #best-restaurant-title {
