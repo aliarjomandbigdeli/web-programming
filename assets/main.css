@@ -204,6 +204,8 @@
     margin: 10px;
     height: 260px;
     width: 260px;
+    padding: 10px;
+    box-shadow: 0px -20px 40px 15px black inset; /*make dark shadow in background*/
 }
 
 #food-photo-items-1 {
