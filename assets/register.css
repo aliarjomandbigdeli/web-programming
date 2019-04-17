@@ -64,6 +64,7 @@ body {
 .input-div {
     display: flex;
     margin: 5px;
+    width: 480px;
 }
 
 .input-div > div > i {
@@ -73,12 +74,14 @@ body {
 
 #phone-email-div {
     display: flex;
+    width: 490px;
 }
 
 .input-div > input {
     border-width: 0;
     padding: 10px;
     color: var(--loign-register-txt-color);
+    width: 100%;
 }
 
 #register-button {

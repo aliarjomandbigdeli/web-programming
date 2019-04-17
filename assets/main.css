@@ -51,6 +51,7 @@
     padding: 10px;
     border-radius: 10px;
     background-color: white;
+    width: 50%;
 }
 
 #city-sel {
@@ -68,11 +69,13 @@
     border-width: 1px;
     border-color: darkgray;
     border-style: solid;
+    width: 100%;
 }
 
 #search-input > input {
     border-width: 0;
     padding: 10px;
+    width: 100%;
     color: var(--loign-register-txt-color);
 }
 
@@ -274,6 +277,8 @@
 
 #sms-input-div {
     display: flex;
+    width: 60%;
+    justify-content: flex-end;
 }
 
 #sms-input-div > input {
@@ -283,6 +288,7 @@
     border-top-right-radius: 25px;
     color: #cac9c9;
     font-size: 1.2em;
+    width: 50%;
 }
 
 #sms-button {
@@ -327,6 +333,11 @@
     flex-direction: column;
     margin: 10px;
     flex-basis: 170px;
+}
+
+.footer-store-icons > img {
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 .footer-items > div {
