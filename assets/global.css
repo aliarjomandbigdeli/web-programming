@@ -19,3 +19,10 @@ a {
 * {
     font-family: Shabnam;
 }
+
+body {
+    --main-bg-color: #f6f9fc;
+    --btn-bg-or-highlighted-color: #d40062;
+    --loign-register-txt-color: gray;
+    --loign-register-bg-color: #f6f9fc;
+}
