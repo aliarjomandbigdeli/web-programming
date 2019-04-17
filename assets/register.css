@@ -40,14 +40,14 @@ body {
 }
 
 #login-header-button {
+    color: var(--loign-register-txt-color);
+}
+
+#register-header-button {
     color: var(--btn-bg-or-highlighted-color);
     border-style: solid;
     border-width: 0 0 3px 0;
     border-color: var(--btn-bg-or-highlighted-color);
-}
-
-#register-header-button {
-    color: var(--loign-register-txt-color);
 }
 
 /*Input div style*/
@@ -61,35 +61,31 @@ body {
     padding-bottom: 50px;
 }
 
-#password-input-div, #email-num-input-div {
+.input-div{
     display: flex;
     margin: 5px;
 }
 
-#inputs-div > div > input {
+.input-div >div > i{
+    background-color: white;
+    padding: 10px;
+}
+
+#phone-email-div {
+    display: flex;
+}
+
+.input-div > input {
     border-width: 0;
     padding: 10px;
     color: var(--loign-register-txt-color);
 }
 
-#inputs-div > div > div > i {
-    background-color: white;
-    padding: 10px;
-}
-
-#forgot-txt {
-    position: relative;
-    left: 150px;
-    font-size: 0.8em;
-    color: #5890ff;
-    margin-top: 5px;
-}
-
-#login-button {
+#register-button {
     background-color: var(--btn-bg-or-highlighted-color);
     color: white;
     margin-top: 50px;
-    padding: 5px 15px 10px 15px;
+    padding: 5px 15px 5px 15px;
     border-radius: 15px;
 }
 
