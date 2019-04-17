@@ -82,12 +82,12 @@
 
 #search-input > div > i {
     background-color: white;
-    color: darkgray;
+    color: lightgray;
     font-size: 1.8em;
 }
 
 #search-btn-icon-div {
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     background: linear-gradient(to right, red, purple);
@@ -101,6 +101,18 @@
     color: #4a5575;
     text-align: right;
     margin-bottom: 100px;
+}
+
+.guidance-div-items {
+    flex-basis: 360px;
+}
+
+.guidance-des-pic-div {
+    display: flex;
+    padding: 10px 15px 10px 10px;
+    box-shadow: 1px 1px 2px 2px lightgray;
+    justify-content: center;
+    align-items: center;
 }
 
 #best-of-the-month {
