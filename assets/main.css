@@ -54,13 +54,39 @@
 }
 
 #city-sel {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     font-size: 1.5em;
     background-color: white;
+    margin-left: 5px;
+    padding-left: 10px;
 }
 
-#search-icon-div {
+#search-input {
+    display: flex;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 1px;
+    border-color: darkgray;
+    border-style: solid;
+}
+
+#search-input > input {
+    border-width: 0;
+    padding: 10px;
+    color: var(--loign-register-txt-color);
+}
+
+#search-input > div{
+    padding: 15px;
+}
+
+#search-input > div > i {
+    background-color: white;
+    color: darkgray;
+    font-size: 1.8em;
+}
+
+#search-btn-icon-div {
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
