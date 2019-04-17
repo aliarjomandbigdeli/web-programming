@@ -61,12 +61,12 @@ body {
     padding-bottom: 50px;
 }
 
-.input-div{
+.input-div {
     display: flex;
     margin: 5px;
 }
 
-.input-div >div > i{
+.input-div > div > i {
     background-color: white;
     padding: 10px;
 }

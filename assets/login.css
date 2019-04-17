@@ -61,18 +61,18 @@ body {
     padding-bottom: 50px;
 }
 
-#password-input-div, #email-num-input-div {
+.input-div {
     display: flex;
     margin: 5px;
 }
 
-#inputs-div > div > input {
+.input-div > input {
     border-width: 0;
     padding: 10px;
     color: var(--loign-register-txt-color);
 }
 
-#inputs-div > div > div > i {
+.input-div > div > i {
     background-color: white;
     padding: 10px;
 }
