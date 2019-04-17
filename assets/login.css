@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%; /*so important in fixed positioning*/
+    z-index: 1;
 }
 
 #icon-div {
@@ -70,7 +71,6 @@ body {
 .input-div > input {
     border-width: 0;
     padding: 10px;
-    color: var(--loign-register-txt-color);
     width: 100%;
 }
 
