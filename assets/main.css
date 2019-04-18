@@ -149,7 +149,11 @@
     padding: 10px;
     flex-basis: 360px;
     text-align: center;
-    box-shadow: 1px 1px 2px 2px lightgray;
+    box-shadow: 0 0 3px lightgray;
+}
+
+.best-month-div-items:hover {
+    box-shadow: 0 0 10px lightgray;
 }
 
 .best-month-div-items > div > img {
@@ -198,6 +202,10 @@
     font-size: 0.85em;
 }
 
+.grid-item > div > img:hover {
+    box-shadow: 0 0 10px lightgray;
+}
+
 #food-div {
     display: flex;
     flex-direction: column;
@@ -222,7 +230,12 @@
     height: 260px;
     width: 260px;
     padding: 10px;
-    box-shadow: 0px -20px 40px 15px black inset; /*make dark shadow in background*/
+    box-shadow: 0 -20px 40px 15px black inset; /*make dark shadow in background*/
+}
+
+.food-photo-items:hover {
+    padding-top: 3px;
+    padding-bottom: 17px;
 }
 
 #food-photo-items-1 {
@@ -254,6 +267,10 @@
     padding: 12px;
     border-radius: 20px;
     background-color: white;
+}
+
+.more-food-items:hover {
+    box-shadow: 0 0 7px lightgray;
 }
 
 #sms-div {
@@ -327,7 +344,7 @@
 }
 
 #store-icons > img:hover {
-    box-shadow: 1px 1px 2px 2px lightgray;
+    box-shadow: 0 0 7px lightgray;
 }
 
 #store-icons > img {
