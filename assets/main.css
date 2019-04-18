@@ -326,11 +326,12 @@
     min-width: 450px;
 }
 
+#store-icons > img:hover {
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+
 #store-icons > img {
     margin: 5px;
-    border-style: solid;
-    border-color: gray;
-    border-width: 1px;
     border-radius: 10px;
 }
 
