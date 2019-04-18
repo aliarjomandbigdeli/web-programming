@@ -85,6 +85,10 @@
     font-size: 1.2em;
 }
 
+#search-input > input:focus {
+    outline-width: 0;
+}
+
 #search-input > div {
     padding: 15px;
 }
@@ -158,7 +162,7 @@
 
 .stars {
     display: flex;
-    color: darkgray;
+    color: lightgray;
 }
 
 .stars > i {
@@ -297,6 +301,12 @@
     border-top-right-radius: 25px;
     font-size: 1.2em;
     width: 50%;
+    border-width: 1px;
+}
+
+#sms-input-div > input:focus {
+    outline-width: 0;
+    border: 1px solid purple;
 }
 
 #sms-button {

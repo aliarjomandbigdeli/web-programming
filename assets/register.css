@@ -67,6 +67,20 @@ body {
     width: 480px;
 }
 
+.input-div > input {
+    border-width: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-div:focus-within {
+    outline: 1px solid var(--btn-bg-or-highlighted-color);
+}
+
+.input-div > input:focus {
+    outline-width: 0;
+}
+
 .input-div > div > i {
     background-color: white;
     padding: 10px;
@@ -77,11 +91,6 @@ body {
     width: 490px;
 }
 
-.input-div > input {
-    border-width: 0;
-    padding: 10px;
-    width: 100%;
-}
 
 #register-button {
     background-color: var(--btn-bg-or-highlighted-color);

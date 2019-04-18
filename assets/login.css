@@ -74,6 +74,14 @@ body {
     width: 100%;
 }
 
+.input-div:focus-within {
+    outline: 1px solid var(--btn-bg-or-highlighted-color);
+}
+
+.input-div > input:focus {
+    outline-width: 0;
+}
+
 .input-div > div > i {
     background-color: white;
     padding: 10px;
