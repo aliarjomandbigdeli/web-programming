@@ -182,6 +182,10 @@
     color: orange;
 }
 
+.rate-number {
+    color: orange;
+}
+
 .order-bst-rest-btn {
     color: var(--btn-bg-or-highlighted-color);
     border-color: var(--btn-bg-or-highlighted-color);
