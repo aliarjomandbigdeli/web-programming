@@ -68,13 +68,14 @@
     background-color: white;
     margin-left: 5px;
     padding-left: 10px;
+    border-color: lightgray;
 }
 
 #search-input {
     display: flex;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    border: 1px solid darkgray;
+    border: 1px solid lightgray;
     width: 100%;
 }
 
@@ -104,6 +105,10 @@
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     background: linear-gradient(to right, red, purple);
+    color: white;
+}
+
+#search-btn-icon-div > a {
     color: white;
 }
 
@@ -140,15 +145,19 @@
     margin-bottom: 50px;
 }
 
+#best-of-the-month-div > a {
+    flex-basis: 360px;
+    margin: 10px;
+}
+
 .best-month-div-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     padding: 10px;
-    flex-basis: 360px;
     text-align: center;
+    height: 365px;
     box-shadow: 0 0 3px lightgray;
 }
 
@@ -220,13 +229,16 @@
     justify-content: center;
 }
 
+#food-photo-div > * {
+    margin: 10px;
+}
+
 .food-photo-items {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     text-align: right;
     color: white;
-    margin: 10px;
     height: 260px;
     width: 260px;
     padding: 10px;
@@ -262,8 +274,12 @@
     margin-right: 15%;
 }
 
-.more-food-items {
+#more-food-div > * {
     margin: 10px;
+}
+
+.more-food-items {
+    /*margin: 10px;*/
     padding: 12px;
     border-radius: 20px;
     background-color: white;
@@ -306,7 +322,7 @@
 
 #sms-input-div {
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: flex-end;
     min-width: 350px;
 }
@@ -343,12 +359,15 @@
     min-width: 450px;
 }
 
-#store-icons > img:hover {
+#store-icons > * {
+    margin: 5px;
+}
+
+#store-icons > a > img:hover {
     box-shadow: 0 0 7px lightgray;
 }
 
-#store-icons > img {
-    margin: 5px;
+#store-icons > a > img {
     border-radius: 10px;
 }
 
@@ -377,8 +396,9 @@
     border-radius: 10px;
 }
 
-.footer-items > div {
+.footer-items > a {
     color: #939b89;
+    margin: 3px;
 }
 
 .footer-item-line {
@@ -406,6 +426,10 @@
     padding-top: 30px;
 }
 
+#footer-paragraph > div {
+    color: #939b89;
+}
+
 #rest-list {
     color: #5890ff;
 }
@@ -425,12 +449,13 @@
     display: flex;
 }
 
-#footer-social-row > div {
+#footer-social-row > a {
     margin: 10px;
 }
 
-#footer-social-row > div > i {
+#footer-social-row > a > i {
     font-size: 1.8em;
+    color: gray;
 }
 
 #copy-right {

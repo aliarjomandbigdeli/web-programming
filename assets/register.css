@@ -99,38 +99,3 @@ body {
     padding: 5px 15px 5px 15px;
     border-radius: 15px;
 }
-
-/*footer style*/
-#footer-div {
-    background-color: white;
-}
-
-#footer-social-div {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-#footer-social-div > i {
-    background-color: gray;
-    color: white;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-}
-
-#footer-border-div {
-    height: 2px;
-    background-color: var(--loign-register-bg-color);
-}
-
-#footer-more-option-div {
-    display: flex;
-    justify-content: center;
-    color: var(--loign-register-txt-color);
-    padding: 10px;
-}
-
-#footer-more-option-div > div {
-    margin: 10px;
-}
