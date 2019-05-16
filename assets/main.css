@@ -247,6 +247,8 @@
     width: 260px;
     padding: 10px;
     box-shadow: 0 -20px 40px 15px black inset; /*make dark shadow in background*/
+    background-position: center;
+    background-size: cover;
 }
 
 .food-photo-items:hover {

@@ -40,7 +40,7 @@ function processXML() {
                     var imgURL = imgURLNode.childNodes[0].nodeValue;
 
                     var foodPhotoItem = document.getElementById("food-photo-items-" + (i + 1));
-                    foodPhotoItem.style.backgroundImage = imgURL;
+                    foodPhotoItem.style.backgroundImage = "url('" + imgURL + "')";
                     foodPhotoItem.getElementsByTagName("h3")[0].innerHTML = dictionary[name];
                     foodPhotoItem.getElementsByTagName("h6")[0].innerHTML = countNum + " رستوران فعال";
                 } else {
