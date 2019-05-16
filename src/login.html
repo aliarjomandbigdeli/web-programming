@@ -6,6 +6,7 @@
     <link href="../assets/global.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="../js/loginRegister.js" defer="defer"></script>
     <title>Login</title>
 </head>
 <body>
@@ -15,24 +16,23 @@
     </div>
     <div id="border-div"></div>
     <div id="login-register-button-div">
-        <a id="register-header-button" href="register.html">
+        <a id="register-header-button">
             <div>
                 ثبت نام
                 <i class="fas fa-user"></i>
             </div>
         </a>
-        <a id="login-header-button" href="login.html">
+        <a id="login-header-button">
             <div>
                 ورود
                 <i class="fas fa-sign-in-alt"></i>
             </div>
         </a>
-
     </div>
 </div>
 
-<form>
-    <div id="inputs-div">
+<form id="form">
+    <div class="inputs-div" id="login-inputs-div">
         <h4>ورود</h4>
         <p>ایمیل و یا شماره تلفن خود را وارد کنید</p>
         <div class="input-div">
@@ -46,6 +46,35 @@
         <div id="forgot-txt">رمز عبور خود را فراموش کردم</div>
         <!--        <a href="" id="login-button">ورود</a>-->
         <input type="submit" id="login-button" value="ورود"></input>
+    </div>
+
+    <div class="inputs-div" id="register-inputs-div">
+        <h4>ثبت نام</h4>
+        <p>از اینکه داری به جمع ریحونیا می پیوندی خیلی خوشحالیم</p>
+        <div class="input-div">
+            <input type="text" dir="rtl" placeholder="نام و نام خانوادگی"/>
+            <div><i class="fas fa-user"></i></div>
+        </div>
+        <div id="phone-email-div">
+            <div class="input-div">
+                <input type="text" dir="rtl" placeholder="ایمیل"/>
+                <div><i class="fas fa-envelope"></i></div>
+            </div>
+            <div class="input-div">
+                <input type="text" dir="rtl" placeholder="شماره همراه"/>
+                <div><i class="fas fa-phone"></i></div>
+            </div>
+        </div>
+        <div class="input-div">
+            <input type="password" dir="rtl" placeholder="رمز عبور"/>
+            <div><i class="fas fa-key"></i></div>
+        </div>
+        <div class="input-div">
+            <input type="password" dir="rtl" placeholder="تکرار رمز عبور"/>
+            <div><i class="fas fa-key"></i></div>
+        </div>
+        <!--        <a href="" id="register-button">ثبت نام</a>-->
+        <input type="submit" id="register-button" value="ثبت نام"></input>
     </div>
 </form>
 

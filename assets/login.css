@@ -40,19 +40,33 @@ body {
     color: var(--btn-bg-or-highlighted-color);
 }
 
-#login-header-button {
+
+.active-tab {
     color: var(--btn-bg-or-highlighted-color);
     border-style: solid;
+
     border-width: 0 0 3px 0;
     border-color: var(--btn-bg-or-highlighted-color);
 }
 
-#register-header-button {
+.inactive-tab {
     color: var(--loign-register-txt-color);
 }
 
+/*#login-header-button {*/
+/*    color: var(--btn-bg-or-highlighted-color);*/
+/*    border-style: solid;*/
+
+/*    border-width: 0 0 3px 0;*/
+/*    border-color: var(--btn-bg-or-highlighted-color);*/
+/*}*/
+
+/*#register-header-button {*/
+/*    color: var(--loign-register-txt-color);*/
+/*}*/
+
 /*Input div style*/
-#inputs-div {
+.inputs-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +109,7 @@ body {
     margin-top: 5px;
 }
 
-#login-button {
+#login-button, #register-button {
     background-color: var(--btn-bg-or-highlighted-color);
     color: white;
     margin-top: 50px;
