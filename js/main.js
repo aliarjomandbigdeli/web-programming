@@ -1,3 +1,54 @@
+loadTextDocAsynch("http://demo2469824.mockable.io/best-restaurants");
+
+function loadTextDocAsynch(url) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = process;
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send(null);
+}
+
+bestRestGrid = document.getElementById("best-rest-grid");
+
+function process() {
+    if (this.readyState == 4) {
+        if (this.status == 200) {
+            var jsonObjStr = this.responseText;
+            var jsonObj = JSON.parse(jsonObjStr);
+            var restaurants = jsonObj.restaurants;
+            bestRestGrid.innerHTML = "";
+            for (var i = 0; i < restaurants.length; i++) {
+                if (i < 3) {
+
+                } else {
+                    createRestElement(restaurants[i].name, restaurants[i].imgUrl);
+                    // console.log("name: " + restaurants[i].name + " ,imgUrl: " + restaurants[i].imgUrl + "/n");
+                }
+            }
+        } else {
+            window.alert("Error " + xmlhttp.statusText);
+        }
+    }
+}
+
+function createRestElement(name, imgUrl) {
+    var element = document.createElement("a");
+    var divElement = document.createElement("div");
+    divElement.classList.add("grid-item");
+    var imgDiv = document.createElement("div");
+    var imgEle = document.createElement("img");
+    imgEle.src = imgUrl;
+    imgEle.height = 82;
+    imgEle.width = 82;
+    var txtDiv = document.createElement("div");
+    txtDiv.innerHTML = name;
+    imgDiv.appendChild(imgEle);
+    divElement.appendChild(imgDiv);
+    divElement.appendChild(txtDiv);
+    element.appendChild(divElement);
+    bestRestGrid.appendChild(element);
+}
+
+
 dictionary = {
     sandwich: "ساندویچ",
     burger: "برگر",
@@ -59,7 +110,7 @@ function createFoodElement(name) {
     var element = document.createElement("a");
     var divElement = document.createElement("div");
     divElement.innerHTML = dictionary[name];
-    divElement.classList.add("more-food-items")
+    divElement.classList.add("more-food-items");
     element.appendChild(divElement);
     moreFoodDiv.appendChild(element);
 }
