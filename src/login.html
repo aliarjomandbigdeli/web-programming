@@ -31,20 +31,23 @@
     </div>
 </div>
 
-<div id="inputs-div">
-    <h4>ورود</h4>
-    <p>ایمیل و یا شماره تلفن خود را وارد کنید</p>
-    <div class="input-div">
-        <input type="text" dir="rtl" placeholder="ایمیل یا شماره همراه"/>
-        <div><i class="fas fa-user"></i></div>
+<form>
+    <div id="inputs-div">
+        <h4>ورود</h4>
+        <p>ایمیل و یا شماره تلفن خود را وارد کنید</p>
+        <div class="input-div">
+            <input type="text" name="email-phone" dir="rtl" placeholder="ایمیل یا شماره همراه"/>
+            <div><i class="fas fa-user"></i></div>
+        </div>
+        <div class="input-div">
+            <input type="password" name="pass" dir="rtl" placeholder="رمز ورود"/>
+            <div><i class="fas fa-key"></i></div>
+        </div>
+        <div id="forgot-txt">رمز عبور خود را فراموش کردم</div>
+        <!--        <a href="" id="login-button">ورود</a>-->
+        <input type="submit" id="login-button" value="ورود"></input>
     </div>
-    <div class="input-div">
-        <input type="password" dir="rtl" placeholder="رمز ورود"/>
-        <div><i class="fas fa-key"></i></div>
-    </div>
-    <div id="forgot-txt">رمز عبور خود را فراموش کردم</div>
-    <a href="" id="login-button">ورود</a>
-</div>
+</form>
 
 <div id="footer-log-reg-div">
     <div id="footer-log-reg-social-div">

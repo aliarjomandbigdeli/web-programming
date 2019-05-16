@@ -100,5 +100,7 @@ body {
     color: white;
     margin-top: 50px;
     padding: 5px 15px 10px 15px;
+    border: solid;
     border-radius: 15px;
+    outline-width: 0;
 }
