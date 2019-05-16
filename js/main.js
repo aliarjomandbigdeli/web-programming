@@ -23,7 +23,7 @@ function loadTextDocAsynch(url) {
     xmlhttp.send(null);
 }
 
-bestRestGrid = document.getElementById("best-rest-grid");
+var bestRestGrid = document.getElementById("best-rest-grid");
 
 function process() {
     if (this.readyState == 4) {
@@ -115,10 +115,7 @@ function processXML() {
                     var imgURLNode = foods[i].getElementsByTagName("imgUrl")[0];
                     var imgURL = imgURLNode.childNodes[0].nodeValue;
 
-                    var foodPhotoItem = document.getElementById("food-photo-items-" + (i + 1));
-                    foodPhotoItem.style.backgroundImage = "url('" + imgURL + "')";
-                    foodPhotoItem.getElementsByTagName("h3")[0].innerHTML = dictionary[name];
-                    foodPhotoItem.getElementsByTagName("h6")[0].innerHTML = countNum + " رستوران فعال";
+                    modifyFoodPhotoItem(i, imgURL, name, countNum);
                 } else {
                     imgURL = "";
                     createFoodElement(name);
@@ -129,6 +126,13 @@ function processXML() {
             window.alert("Error " + xmlhttp.statusText);
         }
     }
+}
+
+function modifyFoodPhotoItem(index, imgURL, name, countNum) {
+    var foodPhotoItem = document.getElementById("food-photo-items-" + (index + 1));
+    foodPhotoItem.style.backgroundImage = "url('" + imgURL + "')";
+    foodPhotoItem.getElementsByTagName("h3")[0].innerHTML = dictionary[name];
+    foodPhotoItem.getElementsByTagName("h6")[0].innerHTML = countNum + " رستوران فعال";
 }
 
 function createFoodElement(name) {
