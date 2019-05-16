@@ -1,3 +1,19 @@
+dictionary = {
+    sandwich: "ساندویچ",
+    burger: "برگر",
+    pizza: "پیتزا",
+    kebab: "کباب",
+    salad: "سالاد",
+    iranian: "ایرانی",
+    pasta: "پاستا",
+    fish: "ماهی",
+    breakfast: "صبحانه",
+    juice: "آبمیوه طبیعی",
+    steak: "استیک",
+    soup: "سوپ",
+    fastfood: "فست فود"
+};
+
 loadTextDocAsynch("http://demo2469824.mockable.io/best-restaurants");
 
 function loadTextDocAsynch(url) {
@@ -18,7 +34,9 @@ function process() {
             bestRestGrid.innerHTML = "";
             for (var i = 0; i < restaurants.length; i++) {
                 if (i < 3) {
-
+                    modifyElement(i, restaurants[i].name, restaurants[i].rate, restaurants[i].numOfRates,
+                        restaurants[i].address, restaurants[i].foods, restaurants[i].imgUrl);
+                    // console.log("name: " + restaurants[i].name + " ,rate: " + restaurants[i].rate + " ,num of rates: " + restaurants[i].numOfRates + "/n");
                 } else {
                     createRestElement(restaurants[i].name, restaurants[i].imgUrl);
                     // console.log("name: " + restaurants[i].name + " ,imgUrl: " + restaurants[i].imgUrl + "/n");
@@ -28,6 +46,29 @@ function process() {
             window.alert("Error " + xmlhttp.statusText);
         }
     }
+}
+
+function modifyElement(index, name, rate, numOfRates, address, foods, imgUrl) {
+    var bestMonthItem = document.getElementById("best-month-item-" + (index + 1));
+    var imgEle = bestMonthItem.getElementsByTagName("img")[0];
+    imgEle.src = imgUrl;
+    imgEle.height = 82;
+    imgEle.width = 82;
+    bestMonthItem.getElementsByTagName("h2")[0].innerHTML = name;
+    bestMonthItem.getElementsByClassName("rate-participant")[0].innerHTML = numOfRates;
+    bestMonthItem.getElementsByClassName("rate-number")[0].innerHTML = rate;
+    bestMonthItem.getElementsByClassName("address")[0].innerHTML = address;
+    var foodsStr = "";
+    for (var i = 0; i < foods.length; i++) {
+        if (i === foods.length - 1) {
+            foodsStr += dictionary[foods[i]];
+        } else {
+            foodsStr += dictionary[foods[i]] + " &#9679;";
+        }
+    }
+    bestMonthItem.getElementsByClassName("foods")[0].innerHTML = foodsStr;
+
+
 }
 
 function createRestElement(name, imgUrl) {
@@ -47,22 +88,6 @@ function createRestElement(name, imgUrl) {
     element.appendChild(divElement);
     bestRestGrid.appendChild(element);
 }
-
-
-dictionary = {
-    sandwich: "ساندویچ",
-    burger: "برگر",
-    pizza: "پیتزا",
-    kebab: "کباب",
-    salad: "سالاد",
-    iranian: "ایرانی",
-    pasta: "پاستا",
-    fish: "ماهی",
-    breakfast: "صبحانه",
-    juice: "آبمیوه طبیعی",
-    steak: "استیک",
-    soup: "سوپ"
-};
 
 loadXMLDocAsynch("http://demo2469824.mockable.io/foods");
 
