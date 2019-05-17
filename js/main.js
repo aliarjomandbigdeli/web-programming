@@ -68,7 +68,28 @@ function modifyElement(index, name, rate, numOfRates, address, foods, imgUrl) {
     }
     bestMonthItem.getElementsByClassName("foods")[0].innerHTML = foodsStr;
 
-
+    var stars = bestMonthItem.getElementsByClassName("stars")[0];
+    stars.innerHTML = "";
+    for (var j = 1; j <= 5; j++) {
+        if (j <= Math.floor(rate)) {
+            var element = document.createElement("i");
+            element.classList.add("fa-star");
+            element.classList.add("fas");
+            stars.appendChild(element)
+        } else {
+            if (j - rate <= 0.5) {
+                var element = document.createElement("i");
+                element.classList.add("fa-star-half-alt");
+                element.classList.add("fas");
+                stars.appendChild(element)
+            } else {
+                var element = document.createElement("i");
+                element.classList.add("fa-star");
+                element.classList.add("far");
+                stars.appendChild(element)
+            }
+        }
+    }
 }
 
 function createRestElement(name, imgUrl) {
